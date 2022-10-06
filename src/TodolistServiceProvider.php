@@ -12,7 +12,7 @@ class TodolistServiceProvider extends ServiceProvider {
     $this->loadMigrationsFrom(__DIR__ . '/migrations');
     $this->loadViewsFrom(__DIR__ . '/views', 'todolist');
     $this->publishes([
-      __DIR__ . '/views' => base_path('resources/views/Lionelprovider/todolist'),
+      __DIR__ . '/views' => base_path('resources/views/lionelprovider/todolist'),
     ]);
   }
   /**
