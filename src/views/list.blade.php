@@ -25,6 +25,7 @@
     <thead>
       <tr>
         <th>Name</th>
+        <th>Phone</th>
         <th>Action</th>
       </tr>
     </thead>
