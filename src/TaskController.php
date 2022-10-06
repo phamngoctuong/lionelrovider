@@ -1,7 +1,7 @@
 <?php
-namespace LionelProvider\TodoList;
+namespace Lionelprovider\Todolist;
 use App\Http\Controllers\Controller;
-use LionelProvider\TodoList\Task;
+use Lionelprovider\Todolist\Task;
 use Request;
 class TaskController extends Controller {
   public function index() {

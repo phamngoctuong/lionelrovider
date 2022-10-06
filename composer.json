@@ -13,14 +13,14 @@
   {
     "laravel":
     {
-      "providers": ["LionelProvider\\TodoList\\TodolistServiceProvider"]
+      "providers": ["Lionelprovider\\Todolist\\TodolistServiceProvider"]
     }
   },
   "autoload":
   {
     "psr-4":
     {
-      "LionelProvider\\TodoList\\": "src/"
+      "Lionelprovider\\Todolist\\": "src/"
     }
   }
 }

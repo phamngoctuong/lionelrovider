@@ -1,2 +1,2 @@
 <?php
-Route::resource('/task', 'LionelProvider\TodoList\TaskController');
+Route::resource('/task', 'Lionelprovider\Todolist\TaskController');

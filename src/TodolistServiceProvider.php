@@ -1,5 +1,5 @@
 <?php
-namespace LionelProvider\TodoList;
+namespace Lionelprovider\Todolist;
 use Illuminate\Support\ServiceProvider;
 class TodolistServiceProvider extends ServiceProvider {
   /**
@@ -12,7 +12,7 @@ class TodolistServiceProvider extends ServiceProvider {
     $this->loadMigrationsFrom(__DIR__ . '/migrations');
     $this->loadViewsFrom(__DIR__ . '/views', 'todolist');
     $this->publishes([
-      __DIR__ . '/views' => base_path('resources/views/LionelProvider/todolist'),
+      __DIR__ . '/views' => base_path('resources/views/Lionelprovider/todolist'),
     ]);
   }
   /**
@@ -21,11 +21,11 @@ class TodolistServiceProvider extends ServiceProvider {
    * @return void
    */
   public function register() {
-    $this->app->make('LionelProvider\Todolist\TaskController');
+    $this->app->make('Lionelprovider\Todolist\TaskController');
   }
   /**
    * Run this code
    *
-   * php artisan vendor:publish --provider LionelProvider\Todolist\TodolistServiceProvider
+   * php artisan vendor:publish --provider Lionelprovider\Todolist\TodolistServiceProvider
    */
 }

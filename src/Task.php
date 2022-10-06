@@ -1,5 +1,5 @@
 <?php
-namespace LionelProvider\TodoList;
+namespace Lionelprovider\Todolist;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 class Task extends Model {
