@@ -12,6 +12,9 @@
       {!! Form::text('name',null,['class' => 'form-control']) !!}
     </div>
     <div class="form-group">
+      {!! Form::text('phone',null,['class' => 'form-control']) !!}
+    </div>
+    <div class="form-group">
       {!! Form::submit($submit, ['class' => 'btn btn-primary form-control']) !!}
       </div>
   </div>
@@ -29,6 +32,7 @@
       @foreach($tasks as $task)
         <tr>
           <td>{{ $task->name }}</td>
+          <td>{{ $task->phone }}</td>
           <td>
             {!! Form::open(['route' => ['task.destroy', $task->id], 'method' => 'delete']) !!}
             <div class='btn-group'>
