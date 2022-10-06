@@ -26,6 +26,6 @@ class TodolistServiceProvider extends ServiceProvider {
   /**
    * Run this code
    *
-   * php artisan vendor:publish --provider Lionelprovider\Todolist\TodolistServiceProvider
+   * php artisan vendor:publish --provider="Lionelprovider\\Todolist\\TodolistServiceProvider"
    */
 }
