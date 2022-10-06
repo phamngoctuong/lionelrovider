@@ -9,6 +9,9 @@
   "type": "library",
   "license": "MIT",
   "minimum-stability": "dev",
+  "require": {
+      "laravelcollective/html": "*"
+  },
   "extra":
   {
     "laravel":
