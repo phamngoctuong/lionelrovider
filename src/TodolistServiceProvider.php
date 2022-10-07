@@ -9,10 +9,14 @@ class TodolistServiceProvider extends ServiceProvider {
    */
   public function boot() {
     $this->loadRoutesFrom(__DIR__ . '/routes.php');
-    $this->loadMigrationsFrom(__DIR__ . '/migrations');
-    $this->loadViewsFrom(__DIR__ . '/views', 'todolist');
+    // $this->loadMigrationsFrom(__DIR__ . '/migrations'); //  😒 Use direct in extension
+    $this->loadViewsFrom(__DIR__ . '/views', 'todolist'); // 😒 Use direct in extension
     $this->publishes([
-      __DIR__ . '/views' => base_path('resources/views/lionelprovider/todolist'),
+      __DIR__ . '/views'      => base_path('resources/views/vendor/todolist'), // ✌️ Don't use it directly in extended, copy file to folder
+      // __DIR__ . '/views'      => resource_path('resources/views/vendor/todolist'), // ✌️ Don't use it directly in extended, copy file to folder
+      __DIR__ . '/routes.php' => base_path('routes/web.php'), // ✌️ Don't use it directly in extended, copy file to folder
+      __DIR__ . '/config.php' => config_path('modules.php'), // ✌️ Don't use it directly in extended, copy file to folder
+      __DIR__ . '/migrations' => base_path('database/migrations'), // ✌️ Don't use it directly in extended, copy file to folder
     ]);
   }
   /**
