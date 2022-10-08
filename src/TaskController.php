@@ -10,7 +10,7 @@ class TaskController extends Controller {
   public function create() {
     $tasks  = Task::all();
     $submit = 'Add';
-    return view('lionelprovider.todolist.list', compact('tasks', 'submit'));
+    return view('vendor.todolist.list', compact('tasks', 'submit'));
   }
   public function store() {
     $input = Request::all();
@@ -21,7 +21,7 @@ class TaskController extends Controller {
     $tasks  = Task::all();
     $task   = $tasks->find($id);
     $submit = 'Update';
-    return view('lionelprovider.todolist.list', compact('tasks', 'task', 'submit'));
+    return view('vendor.todolist.list', compact('tasks', 'task', 'submit'));
   }
   public function update($id) {
     $input = Request::all();

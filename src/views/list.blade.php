@@ -1,4 +1,4 @@
-@extends('lionelprovider.todolist.app')
+@extends('vendor.todolist.app')
 @section('content')
   @if(isset($task))
     <h3>Edit : </h3>
